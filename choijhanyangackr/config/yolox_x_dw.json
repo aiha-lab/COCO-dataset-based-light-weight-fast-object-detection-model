@@ -1,0 +1,27 @@
+{
+    "img_size": 640,
+    "ckpt": "yolox_x_dw_kh_merged.pth",
+    "half": false,
+    "data_dir": "/home/khshim/data/coco2017/val2017",
+    "annotation": "/home/khshim/data/coco2017/annotations/instances_val2017.json",
+    "model": {
+        "type": "yolox-x-dw",
+        "depth": 1.33,
+        "width": 1.25
+    },
+    "dali": false,
+    "dataloader": {
+        "batch_size": 16,
+        "num_workers": 4,
+        "prefetch_factor": 2,
+        "queue_depth": 2,
+        "num_threads": 2
+    },
+    "postprocess": {
+        "conf_threshold": 0.001,
+        "nms_threshold": 0.65,
+        "soft": false,
+        "multi_class": false,
+        "rmmop": null
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "img_size": 896,
+    "ckpt": "weights/yolox_m_p6_v2_kh_merged.pth",
+    "half": false,
+    "data_dir": "/home/agc2021/dataset",
+    "annotation": "/home/agc2021/annotations/instances_val2017.json",
+    "model": {
+        "type": "yolox-m-p6-v2",
+        "depth": 0.67,
+        "width": 0.75
+    },
+    "dali": false,
+    "dataloader": {
+        "batch_size": 16,
+        "num_workers": 4,
+        "prefetch_factor": 2,
+        "queue_depth": 2,
+        "num_threads": 2
+    },
+    "postprocess": {
+        "conf_threshold": 0.001,
+        "nms_threshold": 0.55,
+        "soft": false,
+        "multi_class": false,
+        "rmmop": null
+    }
+}
