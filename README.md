@@ -44,4 +44,5 @@ python 03_jh_merge.py
 mv merged_49.pth choijhanyangackr/weights/
 
 # Inference 
+cd choijhanyangackr
 python main.py
