@@ -22,7 +22,7 @@ pip install -e requirements.txt
 ```
 ln -s data/coco ./datasets/COCO
 ```
-- Step 3. Training
+- Step 3. Training and Inference
 ```
 # Training Phase 1
 python tools/train.py –f exps/p6/yolox_m_p6.py -d 4 -b 64 --fp16 -o --cache
@@ -43,5 +43,5 @@ python 02_direc_pruning.py
 python 03_jh_merge.py
 mv merged_49.pth choijhanyangackr/weights/
 
-# Inference
+# Inference 
 python main.py
